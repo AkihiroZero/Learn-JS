@@ -76,14 +76,35 @@ compare = 5 === "5";
 document.writeln(compare);
 document.writeln("<br>");
 
+compare = 5 < 10;
+document.writeln(compare);
+document.writeln("<br>");
+
 compare = 5 > 10;
 document.writeln(compare);
 document.writeln("<br>");
 
-compare = 5 < 10;
+compare = 5 !== "5";
+document.writeln(compare);
+document.writeln("<br>");
+
+compare = 5 != 5;
 document.writeln(compare);
 document.writeln("<hr>");
 
 //5) Operator Logical
+const logicValue = 80;
+const logicResult = 75;
 
+const passValue = logicValue > 75;
+document.writeln("passValue = "+passValue);
+document.writeln("<br>");
 
+const passResult = logicResult > 75;
+document.writeln("passResult = "+passResult);
+document.writeln("<br>");
+
+const pass = passValue && passResult;
+document.writeln("Full Pass = "+pass);
+
+// const pass = 
