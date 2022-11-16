@@ -97,7 +97,7 @@ document.writeln("<hr>");
 //12). Data Type Array
 
 let emptyArray = [];
-//insert data
+    //insert data
 emptyArray.push("Filled");
 emptyArray.push("Insert", "Data","Number",50);
 let namedArray = ["Name","Class","Data","String"];
@@ -120,17 +120,61 @@ console.table(namedArray);
 //13). Data Type Object
 
 const emptyObject = {};
-
+const filledObject= {
+    object : "an object",
+    "string" : "a string",
+    99 : 99,
+    false : true
+}
     //Insert data
 emptyObject["Object"] = ["Test Object"];
 emptyObject["String"] = ["Test String"];
 emptyObject["Integer"] = [99];
 emptyObject["Boolean"] = [true];
-
 console.table(emptyObject);
+console.table(filledObject);
+console.info(`Changed Object : ${emptyObject.Object}`)
 
-// delete emptyObject[];
+//14). Alert, Prompt And Confirm
+    
+    //Alert
+alert("Welcome To Basic Show Data");
 
+    //Prompt
+const promptExample = prompt("Its a prompt pop up fill something here");
+alert (`Hello ${promptExample}`);
 
+    //Confirm
+const confirmExample = confirm("its confirm pop up press the button");
+    if(confirmExample){
+        alert("Ok button pressed");
+    }else{
+        alert("cancel button pressed");
+    }
 
+//15). Undefined
+    let undefineExample;
+    if(undefineExample === undefined){
+        document.writeln("Undefined Data Example");
+        document.writeln("<br>");
+    }
+    else{
+        document.writeln("Defined Data");
+        document.writeln("<br>");
+    }
+
+    const undefineExamples = ["Array0","Array1"];
+        if(undefineExamples[2] === undefined){
+            console.info("ARRAY UNDEFINED");
+        }
+
+//16). Null
+
+    const nullExample = null;
+    if(nullExample === undefined){
+        document.writeln("Undefined"); 
+    }else if (nullExample === null){
+        document.writeln("Its a Null Example");
+        document.writeln("<br>");
+    }
 
