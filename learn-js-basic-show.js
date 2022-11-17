@@ -138,19 +138,19 @@ console.info(`Changed Object : ${emptyObject.Object}`)
 //14). Alert, Prompt And Confirm
     
     //Alert
-alert("Welcome To Basic Show Data");
+// alert("Welcome To Basic Show Data");
 
-    //Prompt
-const promptExample = prompt("Its a prompt pop up fill something here");
-alert (`Hello ${promptExample}`);
+//     //Prompt
+// const promptExample = prompt("Its a prompt pop up fill something here");
+// alert (`Hello ${promptExample}`);
 
-    //Confirm
-const confirmExample = confirm("its confirm pop up press the button");
-    if(confirmExample){
-        alert("Ok button pressed");
-    }else{
-        alert("cancel button pressed");
-    }
+//     //Confirm
+// const confirmExample = confirm("its confirm pop up press the button");
+//     if(confirmExample){
+//         alert("Ok button pressed");
+//     }else{
+//         alert("cancel button pressed");
+//     }
 
 //15). Undefined
     let undefineExample;
@@ -178,3 +178,13 @@ const confirmExample = confirm("its confirm pop up press the button");
         document.writeln("<br>");
     }
 
+//17). Data Falsy
+
+const falsyExample = "";
+
+if(falsyExample){
+    document.writeln("TRUTHY");
+}else{
+    document.writeln("FALSY");
+    document.writeln("<br>");
+}

@@ -109,3 +109,82 @@ const typeoffObject = {};
 document.writeln(`${typeof typeoffObject}`);
 document.writeln("<hr>");
 
+//7). Optional Chaining
+
+const chainingExample = {
+    address:{
+        region : "indonesia"
+    }
+};
+
+let undefineChaining = chainingExample?.address?.country;
+document.writeln(`${undefineChaining}`);
+document.writeln("<hr>");
+
+//8). For Loop
+
+for (let forExample = 0; forExample < 10; forExample++) {
+document.writeln("Its For Loops " + forExample);
+document.writeln("<br>");
+}
+document.writeln("<hr>");
+
+
+//9). While Loop
+let whileExample = 0
+while (whileExample < 10) {
+    document.writeln(`Its While Loop ${whileExample}`);
+    document.writeln("<br>");
+    whileExample++;
+}
+document.writeln("<hr>");
+
+//10). Do While Loop
+let dowhileExample = 0;
+do {
+    document.writeln("Its Dowhile Loops" + dowhileExample);
+    document.writeln("<br>");
+    dowhileExample++
+} while (dowhileExample < 10);
+document.writeln("<hr>");
+
+//11). Break Statement
+
+let breakExample =0;
+while(true){
+    document.writeln("Brek to stop loops" + breakExample)
+    document.writeln("<br>");
+    breakExample++
+    if(breakExample > 10){
+        break;
+    }
+}
+document.writeln("<hr>");
+
+//12). Loop Label
+
+labeli:
+    for (let loop = 0; loop < 5; loop++) {
+      labelj:
+            for (let loop2 = 0; loop2 < 5; loop2++) {
+                document.writeln(`${loop} - ${loop2}`)
+                document.writeln("<br>");
+            }     
+    }
+document.writeln("<hr>");
+
+//13). For In (Object/Array Looping)
+
+const forInExample = {
+    String : "A String",
+    Number : 199,
+    boolean : true
+}
+
+for (const inStatement in forInExample) {
+    document.writeln(`${inStatement} : ${forInExample[inStatement]}`)
+    document.writeln("<br>");
+}
+document.writeln("<hr>");
+
+//14)

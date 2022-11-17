@@ -106,5 +106,67 @@ document.writeln("<br>");
 
 const pass = passValue && passResult;
 document.writeln("Full Pass = "+pass);
+document.writeln("<hr>");
 
-// const pass = 
+// 6) Operator In
+
+const inExample = {
+    stringIn : "String In Example",
+    undefineIn : undefined, 
+    booleanIn : true,
+    numberIn : 100,
+};
+
+if("stringIn" in inExample){
+    document.writeln(`Test in = ${inExample.stringIn}`);
+    document.writeln("<br>");
+} else{
+    document.writeln("didnt find any in lane");
+    document.writeln("<br>");
+};
+
+if("undefineIn" in inExample){
+    document.writeln(`Undefine In = ${inExample.undefineIn}`);
+    document.writeln("<hr>");
+}
+
+//7). Ternary Operator
+
+const ternaryExample = 85;
+const statement = ternaryExample >= 90 ? "True ternary statement" : "False ternary statement";
+document.writeln(`${statement}`);
+document.writeln("<hr>");
+
+//8). Nullish Coalescing Operator
+
+let parameterExample;
+let coalescingExample = parameterExample ?? "Its true coalescing";
+document.writeln(`${coalescingExample}`);
+document.writeln("<hr>");
+
+//9). Logical Operator Or ||
+
+console.info("Or" || "");
+console.info("" || []);
+console.info("0" || "ZERO");
+console.info(0 || "ZERO");
+console.info(null || "NULL");
+console.info(undefined || "UNDEFINED");
+console.info(0 || false);
+
+const orExample = {
+    firstOrExample : "Or Example",
+    secondOrExample : "More Example"
+};
+const orStatement = orExample.firstOrExample || orExample.secondOrExample;
+console.info(orStatement);
+
+//10). Operator Double &&
+
+console.info("Or" && "");
+console.info("" && []);
+console.info("0" && "ZERO");
+console.info(0 && "ZERO");
+console.info(null && "NULL");
+console.info(undefined && "UNDEFINED");
+console.info(0 && false);
